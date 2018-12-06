@@ -1,45 +1,41 @@
 package com.dobi.base;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
+
+@Getter
+@Setter
+@Slf4j
 public class ResponseBase {
-	// 响应code
-	private Integer code;
-	// 消息内容
+
+	private Integer rtnCode;
 	private String msg;
-	// 返回data
 	private Object data;
 
 	public ResponseBase() {
+
 	}
 
-	public ResponseBase(Integer code, String msg, Object data) {
+	public ResponseBase(Integer rtnCode, String msg, Object data) {
 		super();
-		this.code = code;
+		this.rtnCode = rtnCode;
 		this.msg = msg;
 		this.data = data;
 	}
 
-	public Integer getCode() {
-		return code;
+	public static void main(String[] args) {
+		ResponseBase responseBase = new ResponseBase();
+		responseBase.setData("123456");
+		responseBase.setMsg("success");
+		responseBase.setRtnCode(200);
+		System.out.println(responseBase.toString());
+		log.info("itmayiedu...");
 	}
 
-	public void setCode(Integer code) {
-		this.code = code;
-	}
-
-	public String getMsg() {
-		return msg;
-	}
-
-	public void setMsg(String msg) {
-		this.msg = msg;
-	}
-
-	public Object getData() {
-		return data;
-	}
-
-	public void setData(Object data) {
-		this.data = data;
+	@Override
+	public String toString() {
+		return "ResponseBase [rtnCode=" + rtnCode + ", msg=" + msg + ", data=" + data + "]";
 	}
 
 }

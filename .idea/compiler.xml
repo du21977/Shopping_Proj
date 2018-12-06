@@ -11,6 +11,7 @@
         <module name="eurekaserver" />
         <module name="member" />
         <module name="memberapi" />
+        <module name="message" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="eurekaserver" target="1.8" />
       <module name="member" target="1.8" />
       <module name="memberapi" target="1.8" />
+      <module name="message" target="1.8" />
       <module name="shoppparent" target="1.8" />
     </bytecodeTargetLevel>
   </component>

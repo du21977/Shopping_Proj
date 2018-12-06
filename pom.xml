@@ -13,6 +13,7 @@
         <module>eurekaserver</module>
         <module>api</module>
         <module>member</module>
+        <module>message</module>
     </modules>
 
     <parent>
