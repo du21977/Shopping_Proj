@@ -33,9 +33,9 @@ public class ResponseBase {
 		log.info("itmayiedu...");
 	}
 
-	@Override
-	public String toString() {
-		return "ResponseBase [rtnCode=" + rtnCode + ", msg=" + msg + ", data=" + data + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "ResponseBase [rtnCode=" + rtnCode + ", msg=" + msg + ", data=" + data + "]";
+//	}
 
 }

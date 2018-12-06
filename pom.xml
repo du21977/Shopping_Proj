@@ -14,6 +14,7 @@
         <module>api</module>
         <module>member</module>
         <module>message</module>
+        <module>pcweb</module>
     </modules>
 
     <parent>

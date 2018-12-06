@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/api/member_api.iml" filepath="$PROJECT_DIR$/api/member_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/memberapi/memberapi.iml" filepath="$PROJECT_DIR$/api/memberapi/memberapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/message/message.iml" filepath="$PROJECT_DIR$/message/message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pcweb/pcweb.iml" filepath="$PROJECT_DIR$/pcweb/pcweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/shoppparent.iml" filepath="$PROJECT_DIR$/shoppparent.iml" />
     </modules>
   </component>

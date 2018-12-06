@@ -10,7 +10,9 @@ import org.springframework.stereotype.Component;
 public class BaseApiService {
 	@Autowired
 	protected BaseRedisService baseRedisService;
-
+	public ResponseBase setResultError(Integer code,String msg) {
+		return setResult(code, msg, null);
+	}
 	// 返回错误，可以传msg
 	public ResponseBase setResultError(String msg) {
 		return setResult(Constants.HTTP_RES_CODE_500, msg, null);
