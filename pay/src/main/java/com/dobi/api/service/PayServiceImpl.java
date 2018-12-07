@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSONObject;
-import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePagePayRequest;
@@ -36,7 +35,7 @@ public class PayServiceImpl extends BaseApiService implements PayService {
 		}
 		// 2.生成对应的token
 		String payToken = TokenUtils.getPayToken();
-		// 3.存放在Redis中，key为 token value 支付id
+		// 3.存放在Redis中，key为 token value 支付id---------paymentInfo.getId() + ""加双引号
 		baseRedisService.setString(payToken, paymentInfo.getId() + "", Constants.PAY_TOKEN_MEMBER_TIME);
 		// 4.返回token
 		JSONObject data = new JSONObject();
