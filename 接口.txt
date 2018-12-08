@@ -1,0 +1,12 @@
+
+支付接口json post请求
+{
+"typeId":"1",
+"orderId":"123456789",
+"price":"500",
+"source":"member",
+"state":"0",
+"userId":"549914283",
+"created":"2018-10-10",
+"updated":"2018-10-10"
+}
