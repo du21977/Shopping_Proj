@@ -1,3 +1,6 @@
+还需要开redis
+需要开外网映射工具
+
 1.
 支付拿token
 http://localhost:8768/pay/createPayToken
