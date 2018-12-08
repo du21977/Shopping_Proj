@@ -1,4 +1,6 @@
-
+1.
+支付拿token
+http://localhost:8768/pay/createPayToken
 支付接口json post请求
 {
 "typeId":"1",
@@ -10,3 +12,23 @@
 "created":"2018-10-10",
 "updated":"2018-10-10"
 }
+结果：
+{
+    "rtnCode": 200,
+    "msg": "success",
+    "data": {
+        "payToken": "TOKEN_pay-1e3f8610-0280-476e-8fc6-d61066ec865b"
+    }
+}
+
+
+2.支付请求
+http://127.0.0.1:8099/aliPay?payToken=TOKEN_pay-1e3f8610-0280-476e-8fc6-d61066ec865b
+
+
+3.分布式事务调试
+先要启动tx-manager项目，当作分布式事务协调者
+//这个没有错的
+http://localhost:8768/pay/payOrder?orderId=123456781219&temp=1
+//这个有错的，需要回滚的
+http://localhost:8768/pay/payOrder?orderId=123456781219&temp=1

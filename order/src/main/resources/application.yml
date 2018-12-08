@@ -48,6 +48,8 @@ spring:
 ##队列      
 messages:
    queue: messages_queue
-
- 
+##LCN分布式事务
+tm:
+ manager:
+  url: http://127.0.0.1:8899/tx/manager/
     
