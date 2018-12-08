@@ -27,8 +27,8 @@ public class AlipayConfig {
     public static String alipay_public_key = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIgHnOn7LLILlKETd6BFRJ0GqgS2Y3mn1wMQmyh9zEyWlz5p1zrahRahbXAfCfSqshSNfqOmAQzSHRVjCqjsAw1jyqrXaPdKBmr90DIpIxmIyKXv4GGAkPyJ/6FTFY99uhpiq0qadD/uSzQsefWo0aTvP/65zi3eof7TcZ32oWpwIDAQAB";
 
     // 服务器异步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-    public static String notify_url = "http://du.tunnel.qydev.com/notify_url.jsp";
-//    public static String notify_url = "http://du.tunnel.qydev.com/alibaba/callBack/notifyUrl";
+//    public static String notify_url = "http://du.tunnel.qydev.com/notify_url.jsp";
+    public static String notify_url = "http://du.tunnel.qydev.com/alibaba/callBack/notifyUrl";
 
     // 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
 //    public static String return_url = "http://du.tunnel.qydev.com/return_url.jsp";

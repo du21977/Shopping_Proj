@@ -17,10 +17,14 @@ public interface Constants {
 	String TOKEN_MEMBER = "TOKEN_MEMBER";
 	// 支付token
 	String TOKEN_PAY = "TOKEN_pay";
+	// 支付成功
+	String PAY_SUCCESS = "success";
+	// 支付白
+	String PAY_FAIL = "fail";
 	// 用户有效期 90天
 	Long TOKEN_MEMBER_TIME = (long) (60 * 60 * 24 * 90);
 	int COOKIE_TOKEN_MEMBER_TIME = (60 * 60 * 24 * 90);
-	Long PAY_TOKEN_MEMBER_TIME =(long)  (60 * 15 );
+	Long PAY_TOKEN_MEMBER_TIME = (long) (60 * 15);
 	// cookie 会员 totoken 名称
 	String COOKIE_MEMBER_TOKEN = "cookie_member_token";
 }

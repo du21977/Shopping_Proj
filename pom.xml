@@ -16,6 +16,7 @@
         <module>message</module>
         <module>pcweb</module>
         <module>pay</module>
+        <module>order</module>
     </modules>
 
     <parent>

@@ -23,6 +23,8 @@ public interface PaymentInfoDao {
 	@Select("select * from payment_info where  orderId=#{orderId}")
 	public PaymentInfo getByOrderIdPayInfo(@Param("orderId") String orderId);
 
-	@Update("update payment_info set state =#{state},payMessage=#{payMessage},platformorderId=#{platformorderId},updated=#{updated} where orderId=#{orderId} ")
-	public void updatePayInfo(PaymentInfo paymentInfo);
+//	@Update("update payment_info set state =#{state},payMessage=#{payMessage},platformorderId=#{platformorderId},updated=#{updated} where orderId=#{orderId} ")
+//	public Integer updatePayInfo(PaymentInfo paymentInfo);
+	@Update("update payment_info set state =#{state},platformorderId=#{platformorderId},updated=#{updated} where orderId=#{orderId} ")
+	public Integer updatePayInfo(PaymentInfo paymentInfo);
 }
