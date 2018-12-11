@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/api/payapi/payapi.iml" filepath="$PROJECT_DIR$/api/payapi/payapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/pcweb/pcweb.iml" filepath="$PROJECT_DIR$/pcweb/pcweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/shoppparent.iml" filepath="$PROJECT_DIR$/shoppparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weixin/weixin.iml" filepath="$PROJECT_DIR$/weixin/weixin.iml" />
     </modules>
   </component>
 </project>

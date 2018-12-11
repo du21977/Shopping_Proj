@@ -1,5 +1,16 @@
-还需要开redis
-需要开外网映射工具
+
+错误提示：LCN事务管理不要放入parent工程pom，会影响子工程，谁用放入谁的pom中
+
+1.开erureka
+2.还需要开redis
+3.开LCN 事务管理工程 tx-manager   http://127.0.0.1:8899/tx/manager/
+4.需要开外网映射工具 ngrok -config=ngrok.cfg -subdomain du 8099    支付
+
+//微信
+ngrok -config=ngrok.cfg -subdomain du21977 81
+http://du.tunnel.qydev.com/http://du21977.tunnel.qydev.com/
+//微信公众号配置地址
+http://du21977.tunnel.qydev.com/dispatCher
 
 1.
 支付拿token
