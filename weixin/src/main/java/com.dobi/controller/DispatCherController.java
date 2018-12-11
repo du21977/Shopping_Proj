@@ -29,6 +29,7 @@ public class DispatCherController {
 	// 服务器验证接口地址
 	@RequestMapping(value = "/dispatCher", method = RequestMethod.GET)
 	public String dispatCherGet(String signature, String timestamp, String nonce, String echostr) {
+		log.info(signature+"---"+"timestamp"+"---"+"nonce"+"---"+"echostr");
 		// 1.验证参数
 		boolean checkSignature = CheckUtil.checkSignature(signature, timestamp, nonce);
 		// 2.参数验证成功之后，返回随机数
@@ -58,10 +59,16 @@ public class DispatCherController {
 			String fromUserName = resultMap.get("FromUserName");
 			// 消息内容
 			String content = resultMap.get("Content");
+			String msg = null;
+//			if(content.equals("du21988")){
+//			msg = setText("嘿嘿", toUserName,fromUserName);
+//				//返回相关信息
+//			}
+			//调用青云客智能聊天机器人API接口
 			String resultJson = HttpClientUtil.doGet(REQESTURL + content);
 			JSONObject jsonObject = JSONObject.parseObject(resultJson);
 			Integer resultCode = jsonObject.getInteger("result");
-			String msg = null;
+
 			if (resultCode == 0) {
 				String resultContent = jsonObject.getString("content");
 				msg = setText(resultContent, toUserName,fromUserName);
